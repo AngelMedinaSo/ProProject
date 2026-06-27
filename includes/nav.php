@@ -13,6 +13,7 @@ if (!isset($_SESSION)) {
         <?php endif; ?>
     </ul>
     <div class="nav-right">
+        <button id="darkModeBtn" class="btn secondary">Dark Mode</button>
         <?php if (isset($_SESSION['user'])): ?>
             <span class="user-info">Logged in as <?php echo htmlspecialchars($_SESSION['user']); ?></span>
             <a href="<?php echo (strpos($_SERVER['REQUEST_URI'], '/pages/') !== false) ? '../logout.php' : 'logout.php'; ?>" class="btn secondary">Logout</a>

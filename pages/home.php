@@ -49,7 +49,7 @@ $scrims = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <span>(<?php echo htmlspecialchars($scrim["result"]); ?> - Score: <?php echo htmlspecialchars($scrim["score"]); ?> - <?php echo htmlspecialchars($scrim["played_on"]); ?>)</span>
                         <br>
                         <a href="../edit.php?id=<?php echo htmlspecialchars($scrim["id"]); ?>" class="btn">Edit</a>
-                        <a href="../delete.php?id=<?php echo htmlspecialchars($scrim["id"]); ?>" class="btn">Delete</a>
+                        <a href="../delete.php?id=<?php echo htmlspecialchars($scrim["id"]); ?>" class="btn-danger">Delete</a>
                     </li>
                 <?php endforeach; ?>
             </ul>
